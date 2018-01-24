@@ -18,6 +18,12 @@ Some useful tips to help you get started:
   $> python -m SimpleHTTPServer 8080
   ```
 
+1. Or if you have at least version 3 of Python
+
+```
+  $> python -m http.server 8080
+```
+
 1. Open a browser and visit localhost:8080
 1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
 
@@ -53,3 +59,19 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
+
+### Optimizations Done
+```
+#### views/js/main.js
+1.  Removed var randomPizzas from for loop 2 lines below.
+2.  Remove var pizzasDiv fromm for loop 2 lines below and also changed querySelectorAll to getElementById.
+3.  Changed var items querySelectorAll to getElementsByClassName.
+4.  Reduced the number of pizzas generated with virable var s from 250 to 200.
+5.  Minified js manually through website [JavaScript Minifier](https://javascript-minifier.com/).
+6.  Implement gulp is highly recommended.
+
+#### pizza.html
+1. Minified every css and js files manually through website [JavaScript Minifier](https://javascript-minifier.com/) for JavaScript files and [CSSMinifier](https://cssminifier.com/) for CSS files.
+2. Compressed every images through [Optimizilla](http://optimizilla.com/) website.
+3.  Implement gulp is highly recommended.
+```
